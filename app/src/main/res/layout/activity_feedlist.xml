@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back5"
+    android:orientation="vertical"
+    tools:context=".feedlist">
+
+    <TextView
+        android:id="@+id/kottuwa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFC107"
+        android:fontFamily="sans-serif-condensed"
+        android:text="KOTTUWA"
+        android:textAlignment="center"
+        android:textColor="#100F0F"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/myemail1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="My Email"
+        android:textColor="#0C0B0B"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/get_email1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/get_feedback1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Feed Back"
+        android:textColor="#0C0C0C"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/get_feedback2"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnedit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EDIT"
+        app:cornerRadius="60px" />
+
+    <Button
+        android:id="@+id/btndelete1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        app:cornerRadius="60px" />
+
+    <TextView
+        android:id="@+id/othermail1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Email"
+        android:textSize="24sp"
+        tools:textColor="#0B0A0A" />
+
+    <EditText
+        android:id="@+id/othermail2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/otherfeed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Feed Back"
+        android:textColor="#050505"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/otherfeed2"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+
+</LinearLayout>

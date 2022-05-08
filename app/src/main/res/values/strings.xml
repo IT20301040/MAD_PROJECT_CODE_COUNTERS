@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">feedback</string>
+    <string name="kottuwa">kottuwa</string>
+    <string name="email1">email1</string>
+    <string name="add_email1">add_email1</string>
+    <string name="rateus1">rateus1</string>
+    <string name="feedback2">feedback2</string>
+    <string name="add_feedback">add_feedback</string>
+    <string name="btn_feedback">btn_feedback</string>
+    <string name="myemail1">myemail1</string>
+    <string name="getemail1">getemail1</string>
+    <string name="get_feedback1">get_feedback1</string>
+    <string name="get_feedback2">get_feedback2</string>
+    <string name="btnedit1">btnedit1</string>
+    <string name="btndelete1">btndelete1</string>
+    <string name="othermail1">othermail1</string>
+    <string name="othermail2">othermail2</string>
+    <string name="otherfeed1">otherfeed1</string>
+    <string name="otherfeed2">otherfeed2</string>
+</resources>
