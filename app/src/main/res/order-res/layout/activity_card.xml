@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/png_20220319_122309_00010"
+    tools:context=".Card">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="412dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Total"
+        app:layout_constraintVertical_bias="0.957" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/png_1" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="36dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/png_2"
+        tools:layout_editor_absoluteX="126dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/png_3"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="679dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="38dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/png_5" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/png_4"
+        tools:layout_editor_absoluteX="291dp"
+        tools:layout_editor_absoluteY="681dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="73dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="56dp"
+        android:background="#FFD12A"
+        android:hint="@string/buy"
+        android:text="Buy Now"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price_dis2"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="73dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
+        android:hint="@string/Remove"
+        android:text="Remove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prices3"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/Dolpin_kottu"
+        android:layout_width="113dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/Dolpin_kottu"
+        android:text="Dolpin kottu"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/prices3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/price_dis2"
+        android:layout_width="52dp"
+        android:layout_height="25dp"
+        android:hint="@string/price_dis"
+        android:text="600/-"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toEndOf="@+id/prices3"
+        tools:layout_editor_absoluteY="457dp" />
+
+    <TextView
+        android:id="@+id/date2"
+        android:layout_width="113dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="12dp"
+        android:hint="@string/Date"
+        android:text="20/03/2022"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Dolpin_kottu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/prices3"
+        android:layout_width="52dp"
+        android:layout_height="25dp"
+        android:hint="@string/price"
+        android:text="Price"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="457dp" />
+
+    <Button
+        android:id="@+id/buy_now"
+        android:layout_width="73dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="60dp"
+        android:background="#FFD12A"
+        android:hint="@string/buy"
+        android:text="Buy Now"
+        app:layout_constraintBottom_toTopOf="@+id/date2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/Remove"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/CARD"
+        android:layout_width="292dp"
+        android:layout_height="62dp"
+        android:fontFamily="@font/abril_fatface"
+        android:hint="@string/CARD"
+        android:text="Koththuwa Cart"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752" />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="113dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="12dp"
+        android:hint="@string/Date"
+        android:text="20/03/2022"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Cheese_kottu"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/Remove"
+        android:layout_width="73dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginBottom="60dp"
+        android:background="#FFFFFF"
+        android:hint="@string/Remove"
+        android:text="Remove"
+        app:layout_constraintBottom_toTopOf="@+id/date2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/price_dis1"
+        android:layout_width="52dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="24dp"
+        android:hint="@string/price_dis"
+        android:text="600/-"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/buy_now"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/prices"
+        android:layout_width="52dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:hint="@string/price"
+        android:text="Price"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Remove"
+        app:layout_constraintEnd_toStartOf="@+id/price_dis1" />
+
+    <TextView
+        android:id="@+id/Cheese_kottu"
+        android:layout_width="113dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="12dp"
+        android:hint="@string/Chicke_kottu"
+        android:text="Chicken kottu"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/prices"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="55dp"
+        android:layout_height="53dp"
+        android:clickable="true"
+        app:backgroundTint="#FFC107"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:layout_editor_absoluteX="281dp"
+        tools:layout_editor_absoluteY="573dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
