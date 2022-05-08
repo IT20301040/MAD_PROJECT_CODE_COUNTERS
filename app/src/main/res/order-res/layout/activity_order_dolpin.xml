@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/png_20220319_054431_0000"
+    tools:context=".Order_Dolpin">
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="122dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="56dp"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:hint="@string/cart"
+        android:text="Sub Total"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button9"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="123dp"
+        android:layout_height="32dp"
+        android:background="#FFD12A"
+        android:hint="@string/cart"
+        android:text="Add to Cart"
+        app:layout_constraintEnd_toStartOf="@+id/buy3"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck"
+        tools:layout_editor_absoluteY="566dp" />
+
+    <Button
+        android:id="@+id/buy3"
+        android:layout_width="135dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="48dp"
+        android:background="#FFD12A"
+        android:hint="@string/buy"
+        android:text="Buy Now"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button11"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="123dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="16dp"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:hint="@string/Total"
+        android:text="Total"
+        app:layout_constraintBottom_toTopOf="@+id/button11"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="412dp"
+        android:layout_height="53dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Total"
+        app:layout_constraintVertical_bias="0.957" />
+
+    <EditText
+        android:id="@+id/editTextNumber7"
+        android:layout_width="235dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:hint="@string/editTextNumbe1"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/quantity2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/quantity2"
+        android:layout_width="88dp"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/Quantity"
+        android:text="Quantity"
+        android:textAlignment="center"
+        android:textColor="#191818"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/price3"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumber7"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/price3"
+        android:layout_width="107dp"
+        android:layout_height="30dp"
+        android:hint="@string/price"
+        android:text="Price"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <TextView
+        android:id="@+id/delievery3"
+        android:layout_width="137dp"
+        android:layout_height="0dp"
+        android:hint="@string/delievery"
+        android:text="Delivery charges"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="454dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber9"
+        android:layout_width="216dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:hint="@string/editTextNumber3"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/delievery3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toEndOf="@+id/delievery3" />
+
+    <EditText
+        android:id="@+id/editTextNumber8"
+        android:layout_width="232dp"
+        android:layout_height="32dp"
+        android:ems="10"
+        android:hint="@string/editTextNumber2"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/price3"
+        tools:layout_editor_absoluteX="143dp" />
+
+    <TextView
+        android:id="@+id/answer3"
+        android:layout_width="112dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="12dp"
+        android:hint="@string/answer"
+        android:text="Display Total"
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="430dp"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Cheese_kottu"
+        android:layout_width="226dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="260dp"
+        android:fontFamily="@font/amarante"
+        android:hint="@string/Dolpin_kottu"
+        android:text="Dolpin Kottu"
+        android:textAlignment="center"
+        android:textColor="#F4EFEF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.994"
+        app:srcCompat="@drawable/png_1" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.992"
+        app:srcCompat="@drawable/png_2" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="188dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.994"
+        app:srcCompat="@drawable/png_3" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.991"
+        app:srcCompat="@drawable/png_4" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/png_5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
