@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">login2</string>
+    <string name="login_title">Login</string>
+    <string name="L_email">Email</string>
+    <string name="L_pw">Password</string>
+    <string name="btn_f_pw">forgotpw</string>
+    <string name="btn_reg">register</string>
+    <string name="btn_signin">signin</string>
+    <string name="Regis_title">Register</string>
+    <string name="et_name">Name</string>
+    <string name="et_mail">E-mail</string>
+    <string name="et_uname">UserName</string>
+    <string name="et_pw">password</string>
+    <string name="et_cno">contactNo</string>
+    <string name="btn_regis">Registration</string>
+    <string name="btn_update">update</string>
+</resources>
