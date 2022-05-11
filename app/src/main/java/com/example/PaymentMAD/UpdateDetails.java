@@ -2,19 +2,24 @@ package com.example.kottupaymentmethod;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class CardDetails extends AppCompatActivity {
+public class UpdateDetails extends AppCompatActivity {
+
     EditText PhoneNumber,CardNumber,CardHolderName,ExpireDate,CW;
-    Button Save,View;
+
+    String StPhoneNumber,StCardNumber, StCardHolderName,StExpireDate,StCW;
+
+
+    Button update;
 
     FirebaseDatabase rootNode;
     DatabaseReference reference;
@@ -22,24 +27,23 @@ public class CardDetails extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_card_details);
+        setContentView(R.layout.activity_update_details);
 
-        PhoneNumber=findViewById(R.id.txt_PhoneNumber);
+        PhoneNumber=findViewById(R.id.txt_PhoneNumberNumber);
         CardNumber=findViewById(R.id.txt_CardNumber);
         CardHolderName=findViewById(R.id.txt_CardHolderName);
         ExpireDate=findViewById(R.id.txt_ExpireDate);
         CW=findViewById(R.id.txt_CW);
-        Save=findViewById(R.id.btnSave);
-        View=findViewById(R.id.btnView);
+        update=findViewById(R.id.btnChange);
 
-        //Save data in FireBase on button click
-        Save.setOnClickListener(new android.view.View.OnClickListener() {
+        getData();
+
+        update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 rootNode=FirebaseDatabase.getInstance();
                 reference=rootNode.getReference("CardDetails");
-
-                //Get all the values
 
                 String Phone = PhoneNumber.getEditableText().toString();
                 String Number = CardNumber.getEditableText().toString();
@@ -59,26 +63,53 @@ public class CardDetails extends AppCompatActivity {
 
                     reference.child(Number).setValue(helperClass);
 
-                    Toast.makeText(getApplicationContext(), "Card details saved!",
+                    Toast.makeText(getApplicationContext(), "Card details updated!",
                             Toast.LENGTH_LONG).show();
+
 
                 }
 
-
             }
         });
 
-        //navigation
-        View.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent= new Intent(CardDetails.this,ViewDetails.class);
-                startActivity(intent);
 
 
 
-            }
-        });
+
+
 
     }
+
+
+    private void getData(){
+
+        if(getIntent().hasExtra("CW"))
+        {
+            StPhoneNumber = getIntent().getStringExtra("PhoneNumber");
+            StCardNumber = getIntent().getStringExtra("CardNumber");
+            StCardHolderName = getIntent().getStringExtra("CardHolderName");
+            StExpireDate = getIntent().getStringExtra("ExpireDate");
+            StCW = getIntent().getStringExtra("CW");
+
+            setData();
+        }
+        else
+        {
+            Toast.makeText(getApplicationContext(), "No Data!",
+                    Toast.LENGTH_LONG).show();
+        }
+
+    }
+
+
+    private void setData(){
+
+        PhoneNumber.setText(StPhoneNumber);
+        CardNumber.setText(StCardNumber);
+        CardHolderName.setText(StCardHolderName);
+        ExpireDate.setText(StExpireDate);
+        CW.setText(StCW);
+
+    }
+
 }

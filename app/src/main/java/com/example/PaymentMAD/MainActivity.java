@@ -28,8 +28,18 @@ public class MainActivity extends AppCompatActivity {
         Ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(MainActivity.this,CardDetails.class);
-                startActivity(intent);
+
+                if(CardPayment.isChecked())
+                {
+                    Intent intent= new Intent(MainActivity.this,CardDetails.class);
+                    startActivity(intent);
+                }
+
+                else
+                {
+
+                }
+
             }
         });
 
