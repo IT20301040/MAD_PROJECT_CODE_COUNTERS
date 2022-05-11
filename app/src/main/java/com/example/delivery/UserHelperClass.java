@@ -1,4 +1,4 @@
-package com.example.location1;
+package com.example.location;
 
 public class UserHelperClass {
 
