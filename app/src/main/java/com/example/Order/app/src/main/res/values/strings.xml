@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Order</string>
+    <string name="Chees">Chees Kottu</string>
+    <string name="add_Positive">add_Positive</string>
+    <string name="negative">negative</string>
+    <string name="textView8">textView8</string>
+    <string name="delievery">delievery</string>
+    <string name="price">price</string>
+    <string name="price_dis">650/-</string>
+    <string name="textView11">850/-</string>
+    <string name="textView9">Total</string>
+    <string name="cart">Add Cart</string>
+    <string name="buy">buy</string>
+
+    <string name="Chicke_kottu">Chicke_kottu</string>
+    <string name="Chicke_kottu2">Chicke_kottu2</string>
+
+    <string name="Dolpin_kottu">Dolpin_kottu</string>
+    <string name="CARD">CARD</string>
+    <string name="Date">Date</string>
+    <string name="Remove">Remove</string>
+
+    <string name="conform_heder">conform_heder</string>
+    <string name="payment_head">payment_head</string>
+    <string name="Bcard_details">Bcard_details</string>
+    <string name="address">address</string>
+    <string name="address_head">address_head</string>
+    <string name="Total">Total</string>
+    <string name="Order_con">Order_con</string>
+    <string name="Cheese_kottu">Cheese_kottu</string>
+    <string name="Quantity">Quantity</string>
+    <string name="editTextNumber1">editTextNumber1</string>
+    <string name="editTextNumbe1" />
+    <string name="editTextNumber2" />
+    <string name="editTextNumber3" />
+    <string name="answer" />
+    <string name="editTextNumber00" />
+    <string name="editTextTotal" />
+    <string name="editTextNumber10" />
+    <string name="button8">button8</string>
+    <string name="cheeseQty" />
+    <string name="Update">Update</string>
+
+
+</resources>
+
