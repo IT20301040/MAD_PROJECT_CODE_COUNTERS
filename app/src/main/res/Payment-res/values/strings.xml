@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Kottu Payment Method</string>
+    <string name="verifyNumber">Verify Phone Number</string>
+    <string name="PhoneNumber">Phone Number</string>
+    <string name="Verify">Verify</string>
+    <string name="EnterOTP">EnterOTP</string>
 </resources>
