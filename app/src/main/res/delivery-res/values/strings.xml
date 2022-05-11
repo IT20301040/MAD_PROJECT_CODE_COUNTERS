@@ -1,8 +1,4 @@
 <resources>
-    <string name="app_name">location1</string>
-    <string name="title_location">Location</string>
-    <string name="inp_province">province</string>
-    <string name="inp_city">City</string>
-    <string name="inp_address">Address</string>
-    <string name="btn_save">Save and Continue</string>
+    <string name="app_name">LOCATION</string>
+    <string name="btn_add">add new addess</string>
 </resources>
