@@ -38,6 +38,8 @@
     <string name="editTextTotal" />
     <string name="editTextNumber10" />
     <string name="button8">button8</string>
+    <string name="cheeseQty" />
+    <string name="Update">Update</string>
 
 
 </resources>

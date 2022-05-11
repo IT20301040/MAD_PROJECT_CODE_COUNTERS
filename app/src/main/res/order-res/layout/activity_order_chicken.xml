@@ -7,51 +7,42 @@
     android:background="@drawable/png_20220319_054814_0000"
     tools:context=".Order_chicken">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="123dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="64dp"
-        android:background="?android:attr/colorActivatedHighlight"
-        android:hint="@string/Total"
-        android:text="Total"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintHorizontal_bias="0.691"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/delievery2"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="122dp"
-        android:layout_height="31dp"
-        android:layout_marginEnd="72dp"
-        android:background="?android:attr/colorActivatedHighlight"
-        android:hint="@string/cart"
-        android:text="Sub Total"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="TouchTargetSizeCheck" />
-
     <TextView
-        android:id="@+id/delievery2"
-        android:layout_width="137dp"
-        android:layout_height="0dp"
-        android:hint="@string/delievery"
-        android:text="Delivery charges"
-        android:textColor="@color/black"
+        android:id="@+id/product"
+        android:layout_width="149dp"
+        android:layout_height="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/Quantity"
+        android:text="Product Name"
+        android:textAlignment="center"
+        android:textColor="#191818"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNumber6"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="439dp" />
+        app:layout_constraintBottom_toTopOf="@+id/quantity"
+        app:layout_constraintEnd_toStartOf="@+id/pname"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/pname"
+        android:layout_width="191dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:hint="@string/editTextNumbe1"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/product"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/buy2"
         android:layout_width="120dp"
         android:layout_height="32dp"
-        android:layout_marginEnd="72dp"
+        android:layout_marginEnd="68dp"
         android:background="#FFD12A"
         android:hint="@string/buy"
         android:text="Buy Now"
@@ -63,26 +54,70 @@
         android:id="@+id/button7"
         android:layout_width="123dp"
         android:layout_height="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginBottom="76dp"
         android:background="#FFD12A"
         android:hint="@string/cart"
         android:text="Add to Cart"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buy2"
-        app:layout_constraintHorizontal_bias="0.677"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
+        android:id="@+id/editTextNumber5"
+        android:layout_width="181dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/editTextNumber2"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toEndOf="@+id/price2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber4"
+        app:layout_constraintVertical_bias="0.462" />
+
+    <EditText
         android:id="@+id/editTextNumber4"
-        android:layout_width="231dp"
-        android:layout_height="37dp"
-        android:layout_marginEnd="24dp"
+        android:layout_width="178dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="@string/editTextNumbe1"
         android:inputType="number"
-        app:layout_constraintBaseline_toBaselineOf="@+id/quantity"
+        app:layout_constraintBottom_toTopOf="@+id/price2"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/delievery2"
+        android:layout_width="137dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
+        android:hint="@string/delievery"
+        android:text="Delivery charges"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumber6"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber6"
+        android:layout_width="181dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="@string/editTextNumber3"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/quantity"
@@ -90,7 +125,7 @@
         android:layout_height="28dp"
         android:layout_alignParentTop="true"
         android:layout_marginStart="8dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="48dp"
         android:fontFamily="sans-serif"
         android:hint="@string/Quantity"
         android:text="Quantity"
@@ -100,26 +135,14 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/price2"
         app:layout_constraintEnd_toStartOf="@+id/editTextNumber4"
-        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextNumber5"
-        android:layout_width="232dp"
-        android:layout_height="32dp"
-        android:ems="10"
-        android:hint="@string/editTextNumber2"
-        android:inputType="number"
-        app:layout_constraintBaseline_toBaselineOf="@+id/price2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.388"
-        app:layout_constraintStart_toEndOf="@+id/price2" />
 
     <TextView
         android:id="@+id/price2"
         android:layout_width="107dp"
         android:layout_height="30dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="24dp"
         android:layout_marginBottom="32dp"
         android:hint="@string/price"
         android:text="Price"
@@ -128,29 +151,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/delievery2"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextNumber6"
-        android:layout_width="216dp"
-        android:layout_height="30dp"
-        android:ems="10"
-        android:hint="@string/editTextNumber3"
-        android:inputType="number"
-        app:layout_constraintBaseline_toBaselineOf="@+id/delievery2"
-        tools:layout_editor_absoluteX="171dp" />
-
-    <TextView
-        android:id="@+id/answer2"
-        android:layout_width="122dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="20dp"
-        android:hint="@string/answer"
-        android:text="Display Total"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.543"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber6" />
 
     <TextView
         android:id="@+id/textView3"
