@@ -1,17 +1,11 @@
 package com.example.feedback;
 
-import android.widget.EditText;
+public class feedback {
+    private String email;
+    private  String feedback;
 
-public class DBHelperClass {
-    String email , feedback;
+    public feedback() {
 
-    public DBHelperClass() {
-
-    }
-
-    public DBHelperClass(String email, String feedback) {
-        this.email = email;
-        this.feedback = feedback;
     }
 
     public String getEmail() {

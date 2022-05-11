@@ -59,21 +59,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btnedit2"
-        app:cornerRadius="60px" />
+        app:cornerRadius="60px"/>
 
     <Button
         android:id="@+id/btndelete2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btndelete2"
-        app:cornerRadius="60px" />
+        app:cornerRadius="60px"/>
 
     <Button
         android:id="@+id/btn_view1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btnview1"
-        app:cornerRadius="60px" />
+        app:cornerRadius="60px"/>
 
 
 </LinearLayout>

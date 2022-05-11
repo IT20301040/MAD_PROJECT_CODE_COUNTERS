@@ -7,46 +7,74 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText email, feedback;
-    Button btn_feedback;
+    EditText email;
+    EditText  feedback;
+
+
+    Button sendbtn , viewbtn;
+
 
     FirebaseDatabase rootNode;
     DatabaseReference reference;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        email =findViewById(R.id.add_email1);
-        feedback =findViewById(R.id.add_feedbak);
-        btn_feedback =findViewById(R.id.btn_feedback);
+        email = findViewById(R.id.get_emailhome);
+        feedback = findViewById(R.id.get_feedbackhome);
 
+        sendbtn = findViewById(R.id.btn_getfeedback);
+        viewbtn = findViewById(R.id.btn_viewfeedback);
 
-        btn_feedback.setOnClickListener(new View.OnClickListener() {
+        //Save data in FireBase on button click
+        sendbtn.setOnClickListener(new android.view.View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent intent = new Intent(MainActivity.this,feedlist.class);
-                startActivity(intent);
                 rootNode = FirebaseDatabase.getInstance();
                 reference = rootNode.getReference("feedback");
-                
-                //get all the values
-                
+
+
+                //Get all the values
+
                 String Email = email.getEditableText().toString();
                 String Feedback = feedback.getEditableText().toString();
-                
-                DBHelperClass helperClass = new DBHelperClass(email ,feedback);
 
-                reference.setValue(helperClass);
+
+                if (Email.isEmpty() || Feedback.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Please fill all field!",
+                            Toast.LENGTH_LONG).show();
+                } else {
+                    DBHelperClass helperClass = new DBHelperClass(Email,Feedback);
+
+                    reference.child(Email).setValue(helperClass);
+
+                    Toast.makeText(getApplicationContext(), "feedback saved!",
+                            Toast.LENGTH_LONG).show();
+
+                }
+
+
             }
         });
+
+        viewbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,viewfeedback.class);
+                startActivity(intent);
+            }
+        });
+
     }
+
 }

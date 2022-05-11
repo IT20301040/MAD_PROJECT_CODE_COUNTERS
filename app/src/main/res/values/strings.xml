@@ -2,19 +2,37 @@
     <string name="app_name">feedback</string>
     <string name="kottuwa">kottuwa</string>
     <string name="email1">email1</string>
-    <string name="add_email1">add_email1</string>
+
     <string name="rateus1">rateus1</string>
     <string name="feedback2">feedback2</string>
-    <string name="add_feedback">add_feedback</string>
-    <string name="btn_feedback">btn_feedback</string>
-    <string name="myemail1">myemail1</string>
-    <string name="getemail1">getemail1</string>
-    <string name="get_feedback1">get_feedback1</string>
+
+
     <string name="get_feedback2">get_feedback2</string>
     <string name="btnedit1">btnedit1</string>
     <string name="btndelete1">btndelete1</string>
-    <string name="othermail1">othermail1</string>
-    <string name="othermail2">othermail2</string>
-    <string name="otherfeed1">otherfeed1</string>
-    <string name="otherfeed2">otherfeed2</string>
+
+
+    <string name="btn_view">btn_view</string>
+    <string name="Button">SEND</string>
+    <string name="rateus2">Rate Us</string>
+    <string name="email2">E mail</string>
+    <string name="feedback3">Feed Back</string>
+    <string name="ratingBar1" />
+
+    <string name="get_email1" />
+
+    <string name="btnedit2">EDIT</string>
+    <string name="btndelete2">DELETE</string>
+    <string name="btnview1">VIEW</string>
+    <string name="BtnDelete">Delete</string>
+    <string name="BtnUpdate">Update</string>
+    <string name="Email" />
+
+    <string name="txt_Email1">Email</string>
+    <string name="txt_Feed">Feedback</string>
+    <string name="Add_newfeed">ADD</string>
+    <string name="get_emailhome" />
+    <string name="getfeedbackhome" />
+    <string name="btn_getfeedback">SUBMIT</string>
+    <string name="btn_viewfeedback">VIEW ALL</string>
 </resources>

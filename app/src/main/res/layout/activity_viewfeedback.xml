@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".viewfeedback">
+
+    <TextView
+        android:id="@+id/kottuwa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFC107"
+        android:fontFamily="sans-serif-condensed"
+        android:text="KOTTUWA"
+        android:textAlignment="center"
+        android:textColor="#100F0F"
+        android:textSize="34sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/Add_newfeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Add_newfeed"
+        app:cornerRadius="60px" />
+
+</LinearLayout>

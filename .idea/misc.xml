@@ -4,7 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/MAD/feedback/app/src/main/res/layout/activity_feedlist.xml" value="0.20416666666666666" />
+        <entry key="..\:/MAD/feedback/app/src/main/res/layout/activity_feedlist2.xml" value="0.22" />
         <entry key="..\:/MAD/feedback/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/MAD/feedback/app/src/main/res/layout/activity_my_adapter.xml" value="0.33" />
+        <entry key="..\:/MAD/feedback/app/src/main/res/layout/activity_update.xml" value="0.2" />
+        <entry key="..\:/MAD/feedback/app/src/main/res/layout/activity_updatefeedback.xml" value="0.2" />
+        <entry key="..\:/MAD/feedback/app/src/main/res/layout/activity_viewfeedback.xml" value="0.25" />
+        <entry key="..\:/MAD/feedback/app/src/main/res/layout/feedlist1.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
